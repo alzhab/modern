@@ -9,8 +9,6 @@
 
 /*=====  End of reset  ======*/
 
-
-
 /*=============================================
 =            Fonts            =
 =============================================*/
@@ -18,8 +16,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:300,700&display=swap");
 
 /*=====  End of Fonts  ======*/
-
-
 
 /*=============================================
 =            Universal            =
@@ -42,14 +38,17 @@ h6 {
 a {
   color: $link-colour;
   text-decoration: none;
-  &:hover{
+  &:hover {
     color: $brand-colour;
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*=====  End of Universal  ======*/
-
-
 
 /*=============================================
 =            Site Header            =
@@ -61,7 +60,16 @@ a {
 
 /*=====  End of Site Header  ======*/
 
+/*=============================================
+=            Logo            =
+=============================================*/
 
+.site-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*=====  End of Logo  ======*/
 
 /*=============================================
 =            Site-nav            =
@@ -69,14 +77,158 @@ a {
 
 .site-nav {
   @include uppercase();
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  text-align: center;
   li {
     display: inline-block;
-    margin-right: 45px;
+    margin: 0 20px;
     a {
       display: block;
     }
   }
 }
 
-/*=====  End of Site-nav  ======*/
+/*=====  End of Site-nav  ====  ==*/
+
+/*=============================================
+=            Info Block            =
+=============================================*/
+
+.info-block {
+}
+
+.info-block__title {
+  margin-bottom: 20px;
+  text-align: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2rem;
+  }
+}
+
+.info-block__title--fancy {
+  &:after {
+    content: "";
+    display: inline-block;
+    background: $brand-colour;
+    margin: 0 auto;
+    height: 1px;
+    width: 46px;
+    height: 4px;
+    margin-top: 22px;
+  }
+}
+
+.info-block__title--big {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 3.5rem;
+    color: black;
+  }
+}
+
+.info-block__subtitle {
+  text-align: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    @include uppercase();
+    color: $brand-colour;
+    font-size: 0.8rem;
+  }
+}
+
+.info-block__body {
+  margin-bottom: 20px;
+  p {
+    color: #616161;
+  }
+}
+
+.info-block__cta {
+  @include uppercase();
+  font-size: 0.7rem;
+  p {
+    a {
+      border-bottom: 2px solid $brand-colour;
+    }
+  }
+}
+
+/*=====  End of Info Block  ======*/
+
+/*=============================================
+=            Hero            =
+=============================================*/
+
+.hero {
+}
+
+.hero__slide {
+}
+
+.hero__text {
+}
+
+.hero__img {
+}
+
+/*=====  End of Hero  ======*/
+
+/*=============================================
+=            Media block            =
+=============================================*/
+
+@media (min-width: 720px) {
+  .site-logo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .site-nav {
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+  }
+
+  .hero__slide {
+    position: relative;
+  }
+
+  .hero__text {
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    transform: translateY(-50%);
+  }
+
+  .hero__img {
+    text-align: right;
+    img {
+      width: 85%;
+    }
+  }
+
+  .info-block__title,
+  .info-block__subtitle {
+    text-align: left;
+  }
+}
+
+/*=====  End of Media block  ======*/

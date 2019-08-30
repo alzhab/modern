@@ -50,7 +50,7 @@ Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
 
 @media only screen and (min-width: 60em) {
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
@@ -136,9 +136,6 @@ Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .col-1 {
     width: 6.33333%;
@@ -220,6 +217,11 @@ a:hover {
   color: #5da8ef;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*=====  End of Universal  ======*/
 /*=============================================
 =            Site Header            =
@@ -230,23 +232,151 @@ a:hover {
 
 /*=====  End of Site Header  ======*/
 /*=============================================
+=            Logo            =
+=============================================*/
+.site-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*=====  End of Logo  ======*/
+/*=============================================
 =            Site-nav            =
 =============================================*/
 .site-nav {
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .site-nav li {
   display: inline-block;
-  margin-right: 45px;
+  margin: 0 20px;
 }
 
 .site-nav li a {
   display: block;
 }
 
-/*=====  End of Site-nav  ======*/
+/*=====  End of Site-nav  ====  ==*/
+/*=============================================
+=            Info Block            =
+=============================================*/
+.info-block__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-block__title h1,
+.info-block__title h2,
+.info-block__title h3,
+.info-block__title h4,
+.info-block__title h5,
+.info-block__title h6 {
+  font-size: 2rem;
+}
+
+.info-block__title--fancy:after {
+  content: "";
+  display: inline-block;
+  background: #5da8ef;
+  margin: 0 auto;
+  height: 1px;
+  width: 46px;
+  height: 4px;
+  margin-top: 22px;
+}
+
+.info-block__title--big h1,
+.info-block__title--big h2,
+.info-block__title--big h3,
+.info-block__title--big h4,
+.info-block__title--big h5,
+.info-block__title--big h6 {
+  font-size: 3.5rem;
+  color: black;
+}
+
+.info-block__subtitle {
+  text-align: center;
+}
+
+.info-block__subtitle h1,
+.info-block__subtitle h2,
+.info-block__subtitle h3,
+.info-block__subtitle h4,
+.info-block__subtitle h5,
+.info-block__subtitle h6,
+.info-block__subtitle p,
+.info-block__subtitle span {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  color: #5da8ef;
+  font-size: 0.8rem;
+}
+
+.info-block__body {
+  margin-bottom: 20px;
+}
+
+.info-block__body p {
+  color: #616161;
+}
+
+.info-block__cta {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.info-block__cta p a {
+  border-bottom: 2px solid #5da8ef;
+}
+
+/*=====  End of Info Block  ======*/
+/*=============================================
+=            Hero            =
+=============================================*/
+/*=====  End of Hero  ======*/
+/*=============================================
+=            Media block            =
+=============================================*/
+@media (min-width: 720px) {
+  .site-logo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .site-nav {
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero__slide {
+    position: relative;
+  }
+  .hero__text {
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .hero__img {
+    text-align: right;
+  }
+  .hero__img img {
+    width: 85%;
+  }
+  .info-block__title,
+  .info-block__subtitle {
+    text-align: left;
+  }
+}
+
+/*=====  End of Media block  ======*/
 /*# sourceMappingURL=screen.min.css.map */
