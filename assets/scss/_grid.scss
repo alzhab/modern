@@ -67,8 +67,17 @@ $breakpoint-large: 60em; // 960px
   width: 100%;
 }
 
+<<<<<<< HEAD
 .row-column {
   flex-direction: column;
+=======
+.row-column{
+  flex-direction: column
+}
+
+.row-centred {
+  align-items: center;
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
 }
 
 .row-centred {

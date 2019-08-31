@@ -197,6 +197,7 @@ Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 a[id="servicios"]:target ~ #main article.panel {
@@ -212,6 +213,8 @@ a[id="galeria"]:target ~ #main article.panel {
 a[id="contacto"]:target ~ #main article.panel {
   -webkit-transform: translateY(-1000px);
   transform: translateY(-1000px);
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
 }
 
 /*=====  End of reset  ======*/
@@ -289,12 +292,15 @@ img {
 .site-social-list li a {
   color: #ebebeb;
   font-size: 2rem;
+<<<<<<< HEAD
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
 
 .site-social-list li a:hover {
   color: #5da8ef;
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
 }
 
 /*=====  End of Social List  ======*/
@@ -393,6 +399,7 @@ img {
 
 .info-block__cta p a {
   padding-bottom: 10px;
+<<<<<<< HEAD
   position: relative;
 }
 
@@ -416,6 +423,9 @@ img {
 
 .info-block__cta p a:hover:after {
   top: -10px;
+=======
+  border-bottom: 2px solid #5da8ef;
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
 }
 
 /*=====  End of Info Block  ======*/
@@ -645,7 +655,10 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
+<<<<<<< HEAD
   z-index: 4;
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
   font-weight: 300;
   cursor: pointer;
 }

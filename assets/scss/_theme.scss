@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 a[id="servicios"]:target ~ #main article.panel {
@@ -20,6 +21,8 @@ a[id="galeria"]:target ~ #main article.panel {
 a[id="contacto"]:target ~ #main article.panel {
   -webkit-transform: translateY(-1000px);
   transform: translateY(-1000px);
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
 }
 
 /*=====  End of reset  ======*/
@@ -106,10 +109,13 @@ img {
     a {
       color: #ebebeb;
       font-size: 2rem;
+<<<<<<< HEAD
       transition: 0.3s ease all;
       &:hover{
         color: $brand-colour
       }
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
     }
   }
 }
@@ -211,6 +217,7 @@ img {
   p {
     a {
       padding-bottom: 10px;
+<<<<<<< HEAD
       position: relative;
       &:after {
         content: "";
@@ -230,6 +237,10 @@ img {
           top: -10px;
         }
       }
+=======
+
+      border-bottom: 2px solid $brand-colour;
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
     }
   }
 }
@@ -431,7 +442,10 @@ img {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
+<<<<<<< HEAD
   z-index: 4;
+=======
+>>>>>>> 145fe33f681e48fc153fa8293269cc24828dc0d4
   font-weight: 300;
   cursor: pointer;
 }
