@@ -50,7 +50,7 @@ $breakpoint-large: 60em; // 960px
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #f5f5f5;
+  border: 1px solid $border-colour;
   border-top: none;
   border-bottom: none;
 
@@ -65,6 +65,10 @@ $breakpoint-large: 60em; // 960px
 
 .row {
   width: 100%;
+}
+
+.row-column{
+  flex-direction: column
 }
 
 .row-centred {

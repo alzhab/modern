@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/screen.min.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="site-header">
-        <div class="row row-centred">
-          <div class="col-2">
-            <div class="site-logo">
-              <img
-                src="assets/img/logo.png"
-                srcset="assets/img/logo@2x.png 2x"
-                alt="A Beautiful Escape"
-              />
-            </div>
-            <!-- /.site-logo -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/screen.min.css" />
+  <script src="https://kit.fontawesome.com/4a1cca426f.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/video.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="row row-centred">
+        <div class="col-2">
+          <div class="site-logo">
+            <img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="A Beautiful Escape" />
           </div>
-          <!-- /.col-2 -->
-          <div class="col-10">
-            <nav class="site-nav">
-              <ul>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Boards</a></li>
-              </ul>
-            </nav>
-            <!-- /.site-nav -->
-          </div>
-          <!-- /.col-10 -->
+          <!-- /.site-logo -->
         </div>
-        <!-- /.row -->
-      </header>
-      <!-- /.site-header -->
-
-      <section class="hero">
-        <div class="hero__slide">
-          <div class="hero__text">
-            <div class="info-block">
-              <div class="info-block__subtitle">
-                <span>your</span>
-              </div>
-              <!-- /.info-block__subtitle -->
-              <div class="info-block__title info-block__title--big">
-                <h1>Beautiful Escape</h1>
-              </div>
-              <!-- /.info-block__title -->
-              <div class="info-block__body">
-                <p>
-                  One of the greatest things about the sport of surfing is that
-                  you need only three things: your body, a surfboard, and a
-                  wave.
-                </p>
-              </div>
-              <!-- /.info-block__body -->
-            </div>
-            <!-- /.info-block -->
-          </div>
-          <!-- /.hero__text -->
-
-          <div class="hero__img">
-            <img src="assets/img/hero-img.jpg" alt="Your Beautiful Escape" />
-          </div>
-          <!-- /.hero__img -->
+        <!-- /.col-2 -->
+        <div class="col-10">
+          <nav class="site-nav">
+            <ul>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Places</a></li>
+              <li><a href="#">Boards</a></li>
+            </ul>
+          </nav>
+          <!-- /.site-nav -->
         </div>
-      </section>
-      <!-- /.hero -->
+        <!-- /.col-10 -->
+      </div>
+      <!-- /.row -->
+    </header>
+    <!-- /.site-header -->
 
+    <section class="hero">
+      <div class="hero__slide">
+        <div class="hero__text">
+          <div class="info-block">
+            <div class="info-block__subtitle">
+              <span>your</span>
+            </div>
+            <!-- /.info-block__subtitle -->
+            <div class="info-block__title info-block__title--big">
+              <h1>Beautiful Escape</h1>
+            </div>
+            <!-- /.info-block__title -->
+            <div class="info-block__body">
+              <p>
+                One of the greatest things about the sport of surfing is that
+                you need only three things: your body, a surfboard, and a
+                wave.
+              </p>
+            </div>
+            <!-- /.info-block__body -->
+          </div>
+          <!-- /.info-block -->
+        </div>
+        <!-- /.hero__text -->
+
+        <div class="hero__img">
+          <img src="assets/img/hero-img.jpg" alt="Your Beautiful Escape" />
+        </div>
+        <!-- /.hero__img -->
+      </div>
+    </section>
+    <!-- /.hero -->
+
+    <section class="stories">
       <div class="quote">
         <blockquote>
           <p class="quote__body">
@@ -87,13 +88,7 @@
       <div class="d-flex">
         <div class="showcase">
           <div class="showcase__img">
-            <img
-              width="706"
-              height="549"
-              src="assets/img/surfing.jpg"
-              srcset="assets/img/surfing@2x.jpg 2x"
-              alt=""
-            />
+            <img width="706" height="549" src="assets/img/surfing.jpg" srcset="assets/img/surfing@2x.jpg 2x" alt="" />
           </div>
           <!-- /.showcase__img -->
           <div class="showcase__body">
@@ -117,19 +112,316 @@
         <!-- /.showcase -->
 
         <div class="showcase showcase--bigger">
-          <div class="showcase__img">
-            <img
-              src="assets/img/surfboard.jpg"
-              srcset="assets/img/surfboard@2x.jpg 2x"
-              alt=""
-            />
+          <div class="showcase__play">
+            <i class="fas fa-play"></i>
           </div>
+
+          <video class="showcase__img" width="100%" height="100%" loop>
+            <source src="assets/video/surfing.mp4">
+          </video>
           <!-- /.showcase__img -->
         </div>
         <!-- /.showcase -->
       </div>
       <!-- /.flex -->
+    </section>
+    <!-- /.stories -->
+
+    <section class="shop">
+      <p class="shop__subtitle">
+        shop
+      </p>
+      <!-- /.shop__subtitle -->
+      <p class="shop__title">
+        Surfboards
+      </p>
+      <!-- /.shop__title -->
+
+      <div class="shop__slider-container">
+        <div class="shop__slider">
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+
+          <div class="shop__slide">
+            <div class="product">
+              <div class="product__img">
+                <img src="assets/img/board.png" alt="">
+              </div>
+              <!-- /.product__img -->
+              <div class="product__body">
+                <p class="product__category">Funboards</p>
+                <!-- /.product__category -->
+                <h2 class="product__title">Chilli Rare Bird</h2>
+                <!-- /.product__title -->
+                <div class="product__price">
+                  <span>$890</span>
+                  <a href="#">buy</a>
+                </div>
+                <!-- /.product__price -->
+              </div>
+              <!-- /.product__body -->
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.shop__slide -->
+        </div>
+        <div class="shop__arrow shop__arrow--left"></div>
+        <div class="shop__arrow shop__arrow--right"></div>
+      </div>
+      <!-- /.shop__slider -->
+
+      <div class="info-block__cta">
+        <p><a href="#">Show All</a></p>
+      </div>
+      <!-- /.info-block__cta -->
+    </section>
+    <!-- /.shop -->
+
+    <section class="events">
+      <div class="event">
+        <div class="event__body">
+          <div class="info-block">
+            <div class="info-block__title info-block__title--big">
+              <h1>Surf Training</h1>
+            </div>
+            <!-- /.info-block__title -->
+            <div class="info-block__title--fancy"></div>
+            <!-- /.info-block__title--fancy -->
+            <div class="info-block__body">
+              <p>
+                By better understanding the various aspects of surfing, By better understanding the various aspects of
+                surfing, you will improve faster and have more fun in the water.
+              </p>
+            </div>
+            <!-- /.info-block__body -->
+            <div class="info-block__cta">
+              <p><a href="#">Read More</a></p>
+            </div>
+            <!-- /.info-block__cta -->
+          </div>
+          <!-- /.info-block -->
+        </div>
+        <!-- /.event__body -->
+        <div class="event__img">
+          <img src="assets/img/event1.jpg" alt="">
+        </div>
+        <!-- /.event__img -->
+      </div>
+      <!-- /.event -->
+
+      <div class="event">
+        <div class="event__img event__img--small">
+          <img src="assets/img/event2.jpg" alt="">
+        </div>
+        <!-- /.event__img -->
+        <div class="event__body">
+          <div class="info-block">
+            <div class="info-block__title info-block__title--big">
+              <h1>Point Break</h1>
+            </div>
+            <!-- /.info-block__title -->
+            <div class="info-block__title--fancy"></div>
+            <!-- /.info-block__title--fancy -->
+            <div class="info-block__body">
+              <p>
+                By better understanding the various aspects of By better understanding the various aspects of surfing,
+                By better understanding the various aspects of surfing, you will improve faster and have more fun in the
+                water.
+              </p>
+            </div>
+            <!-- /.info-block__body -->
+            <div class="info-block__cta">
+              <p><a href="#">Read More</a></p>
+            </div>
+            <!-- /.info-block__cta -->
+          </div>
+          <!-- /.info-block -->
+        </div>
+        <!-- /.event__body -->
+      </div>
+      <!-- /.event -->
+    </section>
+    <!-- /.events -->
+  </div>
+  <!-- /.container -->
+  <section class="join-form">
+    <h2 class="join-form__heading">Join the Club</h2>
+    <!-- /.form__heading -->
+    <p class="join-form__second-text">
+      By better understanding the various aspects of surfing, you will improve faster
+      and have more fun in the water.
+    </p>
+    <!-- /.form__second-text -->
+    <form class="join-form__form">
+      <input type="email" placeholder="Your E-mail">
+      <button type="submit">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </form>
+  </section>
+  <!-- /.form -->
+
+  <section class="places">
+    <div class="places__img">
+      <img src="assets/img/place-img.jpg" alt="">
     </div>
-    <!-- /.container -->
-  </body>
+    <!-- /.places__img -->
+    <div class="places__body ">
+      <div class="info-block">
+        <div class="info-block__subtitle">
+          <p>our camp</p>
+        </div>
+        <!-- /.info-block__subtitle -->
+        <div class="info-block__title info-block__title--big">
+          <h1>
+            CA 91932, USA
+            Imperial Beach
+            560 Silver Strand Blvd
+          </h1>
+        </div>
+        <!-- /.info-block__title -->
+        <div class="info-block__cta">
+          <p><a href="#">Get in Touch</a></p>
+        </div>
+        <!-- /.info-block__cta -->
+      </div>
+      <!-- /.info-block -->
+    </div>
+  </section>
+  <!-- /.places -->
+
+  <footer class="footer">
+    <div class="site-logo">
+      <img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="A Beautiful Escape" />
+    </div>
+    <!-- /.site-logo -->
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Boards</a></li>
+      </ul>
+    </nav>
+    <!-- /.site-nav -->
+    <ul class="site-social-list">
+      <li><a href="#"><i class="fab fa-facebook"></a></i></li>
+      <li><a href="#"><i class="fab fa-twitter"></a></i></li>
+      <li><a href="#"><i class="fab fa-vimeo"></a></i></li>
+    </ul>
+  </footer>
+
+</body>
+
 </html>
