@@ -13,7 +13,7 @@
 =            Fonts            =
 =============================================*/
 
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i, 700|Poppins:300,700&display=swap");
 
 /*=====  End of Fonts  ======*/
 
@@ -152,7 +152,7 @@ img {
 }
 
 .info-block__body {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   p {
     color: #616161;
   }
@@ -171,19 +171,59 @@ img {
 /*=====  End of Info Block  ======*/
 
 /*=============================================
+=            Blockquote            =
+=============================================*/
+
+.quote {
+  text-align: center;
+  margin: 0 auto 30px auto;
+  &:after {
+    content: "";
+    display: block;
+    background: $brand-colour;
+    width: 2px;
+    height: 100px;
+    margin: 30px auto 20px auto;
+  }
+}
+
+.quote__body {
+  font-family: $headings;
+  color: $heading-colour;
+  font-size: 1.8rem;
+}
+
+.quote__name {
+  @include uppercase();
+  font-style: normal;
+  font-size: 0.7rem;
+  color: $heading-colour;
+  display: block;
+  margin-top: 20px;
+}
+
+/*=====  End of Blockquote  ======*/
+
+/*=============================================
+=            Showcase            =
+=============================================*/
+
+.showcase {
+  margin-bottom: 50px;
+}
+
+.showcase--bigger{
+  display: none;
+}
+
+/*=====  End of Showcase  ======*/
+
+/*=============================================
 =            Hero            =
 =============================================*/
 
 .hero {
-}
-
-.hero__slide {
-}
-
-.hero__text {
-}
-
-.hero__img {
+  margin-bottom: 50px;
 }
 
 /*=====  End of Hero  ======*/
@@ -191,6 +231,13 @@ img {
 /*=============================================
 =            Media block            =
 =============================================*/
+@media (min-width: 500px) {
+  .showcase__body {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+}
 
 @media (min-width: 720px) {
   .site-logo {
@@ -201,14 +248,23 @@ img {
   .site-nav {
     text-align: left;
   }
+  .showcase {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .showcase--bigger {
+    width: 60%;
+    margin-top: 40px;
+    margin-left: -7%;
+    display: block;
+  }
 }
 
 @media (min-width: 800px) {
   .hero {
-  }
-
-  .hero__slide {
     position: relative;
+    margin-bottom: 150px;
   }
 
   .hero__text {
@@ -228,6 +284,10 @@ img {
   .info-block__title,
   .info-block__subtitle {
     text-align: left;
+  }
+
+  .quote {
+    width: 50%;
   }
 }
 
