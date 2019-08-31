@@ -74,10 +74,6 @@ Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
           align-items: center;
 }
 
-.row [class^="col"] {
-  min-height: 0.125rem;
-}
-
 .col-1,
 .col-2,
 .col-3,
@@ -203,6 +199,21 @@ Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
           box-sizing: border-box;
 }
 
+a[id="servicios"]:target ~ #main article.panel {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+a[id="galeria"]:target ~ #main article.panel {
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+}
+
+a[id="contacto"]:target ~ #main article.panel {
+  -webkit-transform: translateY(-1000px);
+  transform: translateY(-1000px);
+}
+
 /*=====  End of reset  ======*/
 /*=============================================
 =            Fonts            =
@@ -251,6 +262,9 @@ img {
 =============================================*/
 .site-header {
   padding: 70px 0;
+  margin: 0 auto;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 /*=====  End of Site Header  ======*/
@@ -275,6 +289,12 @@ img {
 .site-social-list li a {
   color: #ebebeb;
   font-size: 2rem;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.site-social-list li a:hover {
+  color: #5da8ef;
 }
 
 /*=====  End of Social List  ======*/
@@ -373,7 +393,29 @@ img {
 
 .info-block__cta p a {
   padding-bottom: 10px;
-  border-bottom: 2px solid #5da8ef;
+  position: relative;
+}
+
+.info-block__cta p a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 90%;
+  background: #5da8ef;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: -1;
+}
+
+.info-block__cta p a:hover {
+  color: #fff;
+}
+
+.info-block__cta p a:hover:after {
+  top: -10px;
 }
 
 /*=====  End of Info Block  ======*/
@@ -603,6 +645,7 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
+  z-index: 4;
   font-weight: 300;
   cursor: pointer;
 }
@@ -853,6 +896,21 @@ img {
 }
 
 @media (min-width: 800px) {
+  .site-header--mini {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: white;
+    padding: 5px 0;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    left: 0;
+    top: 0;
+  }
+  .site-header--mini .site-logo {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
   .hero {
     position: relative;
     margin-bottom: 150px;

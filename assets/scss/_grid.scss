@@ -67,16 +67,12 @@ $breakpoint-large: 60em; // 960px
   width: 100%;
 }
 
-.row-column{
-  flex-direction: column
+.row-column {
+  flex-direction: column;
 }
 
 .row-centred {
   align-items: center;
-}
-
-.row [class^="col"] {
-  min-height: 0.125rem;
 }
 
 .col-1,
